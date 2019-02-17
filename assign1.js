@@ -1,17 +1,89 @@
+// Rubric 2 Assignment
+function reload() {
+  location.reload();
+}
+
+   var text;
+  switch (new Date().getDay()) {
+    case 6:
+      text = "Today is Saturday!";
+      break;
+
+    case 5:
+      text = "TGIF!";
+      break;
+
+    case 0:
+      text = "Happy Sunday";
+      break;
+
+    case 1:
+      text = "Yay Monday... I guess"
+      break;
+
+    case 2:
+      text = "Tuesday"
+      break;
+
+    case 3:
+      text = "Wednesday"
+      break;
+
+    case 4:
+      text = "thursday"
+      break; 
+      
+    default:
+      text = "I wish it was the weekend again";
+  }
+  
+
+function verify() {
+  document.getElementById("demo").innerHTML = text;
+}
+
+function more() {
+  document.getElementById("yes").innerHTML = "<button onclick='combo2()'> Click Here!</button>";
+}
+
+function last(){
+  document.getElementById("more").innerHTML = "Come back if you can't remember the day later on."
+}
+
+function extra() {
+  document.getElementById("two").innerHTML = "<button onclick='reload()'> Click here to re-load the page. </button>"
+}
+
+
+function combo() {
+  verify();
+  more(); 
+}
+
+
+function combo2() {
+  last();
+  extra();
+}
+
+
+
+
+
 //Assignemt 3
 
-var person = prompt("Please enter your name", "ex: spongebob");
-    if (person == "susan") {
-      document.getElementById("intro").innerHTML =
-      "<h1>Welcome, Professor Susan!</h1>";
-    } else {document.getElementById("intro").innerHTML = "<h1>Hello " + person + "!</h1>"}
+// var person = prompt("Please enter your name", "ex: spongebob");
+//     if (person == "susan") {
+//       document.getElementById("intro").innerHTML =
+//       "<h1>Welcome, Professor Susan!</h1>";
+//     } else {document.getElementById("intro").innerHTML = "<h1>Hello " + person + "!</h1>"}
 
-    function myFunction() {
-        var x = document.getElementById("myText").value;
-        var sum = x * 3.14;
-        document.getElementById("demo").innerHTML = sum;
+    // function myFunction() {
+    //     var x = document.getElementById("myText").value;
+    //     var sum = x * 3.14;
+    //     document.getElementById("demo").innerHTML = sum;
 
-      }
+    //   }
 
 
 

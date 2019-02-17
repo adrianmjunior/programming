@@ -5,7 +5,7 @@ body {
 #beige {
     background:rgb(238, 217, 148);
     width: 85%;
-    height:500px;
+    height:600px;
     color:rgb(77, 76, 76);
     margin: 0 auto;
     text-align: center;
@@ -13,6 +13,11 @@ body {
 }
 
 #demo {
-    font-size: 100px;
+    font-size: 75px;
     
+}
+
+#more {
+    font-size: 50px;
+    text-align: center;
 }

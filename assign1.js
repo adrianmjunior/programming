@@ -1,70 +1,126 @@
-// Rubric 2 Assignment
+// Rubric 3
 function reload() {
   location.reload();
 }
 
-   var text;
-  switch (new Date().getDay()) {
-    case 6:
-      text = "Today is Saturday!";
-      break;
+function swap() {
+  var list = document.getElementsByTagName("UL")[0];
+  list.getElementsByTagName("LI")[0].innerHTML = "switch-a-roo";
+}
 
-    case 5:
-      text = "TGIF!";
-      break;
+function confirm() {
+  document.getElementById("latin").innerHTML = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni qui praesentium debitis ipsa odit sapiente, cupiditate hic nihil doloremque animi voluptatum consectetur repudiandae voluptatibus ipsum, blanditiis eaque doloribus. Dolorum, accusantium! <button onclick='creation()'>Click again!</button>"
 
-    case 0:
-      text = "Happy Sunday";
-      break;
+}
 
-    case 1:
-      text = "Yay Monday... I guess"
-      break;
+function creation() {
+  var btn = document.createElement("BUTTON");
+  var t = document.createTextNode("I'm New");
+  btn.appendChild(t);
+  document.body.appendChild(btn);
+}
 
-    case 2:
-      text = "Tuesday"
-      break;
 
-    case 3:
-      text = "Wednesday"
-      break;
 
-    case 4:
-      text = "thursday"
-      break; 
+function combo (){
+  swap();
+  confirm();
+
+}
+// function more() {
+//   document.getElementById("yes").innerHTML = "<button onclick='combo2()'> Click Here!</button>";
+// }
+
+// function last(){
+//   document.getElementById("more").innerHTML = "Come back if you can't remember the day later on."
+// }
+
+// function extra() {
+//   document.getElementById("two").innerHTML = "<button onclick='reload()'> Click here to re-load the page. </button>"
+// }
+
+
+// function combo() {
+//   verify();
+//   more(); 
+// }
+
+
+// function combo2() {
+//   last();
+//   extra();
+// }
+
+
+
+
+// Rubric 2 Assignment
+// function reload() {
+//   location.reload();
+// }
+
+//    var text;
+//   switch (new Date().getDay()) {
+//     case 6:
+//       text = "Today is Saturday!";
+//       break;
+
+//     case 5:
+//       text = "TGIF!";
+//       break;
+
+//     case 0:
+//       text = "Happy Sunday";
+//       break;
+
+//     case 1:
+//       text = "Yay Monday... I guess"
+//       break;
+
+//     case 2:
+//       text = "Tuesday"
+//       break;
+
+//     case 3:
+//       text = "Wednesday"
+//       break;
+
+//     case 4:
+//       text = "thursday"
+//       break; 
       
-    default:
-      text = "I wish it was the weekend again";
-  }
+//     default:
+//       text = "I wish it was the weekend again";
+//   }
   
 
-function verify() {
-  document.getElementById("demo").innerHTML = text;
-}
+// function verify() {
+//   document.getElementById("demo").innerHTML = text;
+// }
 
-function more() {
-  document.getElementById("yes").innerHTML = "<button onclick='combo2()'> Click Here!</button>";
-}
+// function more() {
+//   document.getElementById("yes").innerHTML = "<button onclick='combo2()'> Click Here!</button>";
+// }
 
-function last(){
-  document.getElementById("more").innerHTML = "Come back if you can't remember the day later on."
-}
+// function last(){
+//   document.getElementById("more").innerHTML = "Come back if you can't remember the day later on."
+// }
 
-function extra() {
-  document.getElementById("two").innerHTML = "<button onclick='reload()'> Click here to re-load the page. </button>"
-}
-
-
-function combo() {
-  verify();
-  more(); 
-}
+// function extra() {
+//   document.getElementById("two").innerHTML = "<button onclick='reload()'> Click here to re-load the page. </button>"
+// }
 
 
-function combo2() {
-  last();
-  extra();
-}
+// function combo() {
+//   verify();
+//   more(); 
+// }
+
+
+// function combo2() {
+//   last();
+//   extra();
+// }
 
 
 

@@ -1,4 +1,8 @@
 /* Layout */
+
+body{
+    background-color: bisque;
+}
 .main {
     display: flex;
     padding: 2em;
@@ -14,11 +18,13 @@
 
 /* Clock styles */
 .circle {
-    fill: none;
-    stroke: #000;
-    stroke-width: 9;
+    fill:lightblue;
+    stroke: darkblue;
+    stroke-width: 15;
     stroke-miterlimit: 10;
 }
+
+
 
 .mid-circle {
     fill: #000;
@@ -62,5 +68,24 @@
 #minute,
 #second {
     transform-origin: 300px 300px;
-    transition: transform .5s ease-in-out;
+    /* transition: transform .5s ease-in-out; */
+}
+
+#wrap {
+    display:flex;
+    justify-content: center;
+}
+
+#dateshow {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
+    width: 75%;
+    background-color:rgb(49, 126, 150);
+    border-radius: 15px;
+    border-style: darkblue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
